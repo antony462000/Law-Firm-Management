@@ -1,0 +1,26 @@
+<center><form action="#" class="form-contact"  method="POST">
+    {% csrf_token %}
+     <div class="row" style="margin-left: 15%;">
+         <div class="col-sm-10 col-md-10">
+             <div class="form-group">
+                 <input type="text"  class="form-control" id="p_name" name="case_title" placeholder="Enter Case Title" required="">
+                 <!-- <div class="help-block with-errors"></div> -->
+             </div>
+             <div class="form-group">
+                 <textarea name="case_desc" class="form-control" rows="5" placeholder="Case Description"></textarea>
+             </div>
+             <div class="form-group">
+               <input type="file"  class="form-control" id="p_name" name="case_file" placeholder="Enter Case Title" >
+               <!-- <div class="help-block with-errors"></div> -->
+           </div>
+           <div class="form-group">
+             <input type="text"  class="form-control" id="p_name" name="case_adv" placeholder="Advocate Name" required="">
+             <!-- <div class="help-block with-errors"></div> -->
+         </div>
+         </div>
+         <div class="form-group">
+             <!-- <div id="success"></div> -->
+             <input type="submit" name="ipc" value="Add Now" class="btn btn-primary">
+             <!-- <button type="submit" name="submit" class="btn btn-primary"><Add Now</button> -->
+         </div>
+ </form></center> 
